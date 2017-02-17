@@ -8,8 +8,8 @@ WOWZA_BASE_PATH="/usr/local/WowzaStreamingEngine"
 apt-get update && \
  DEBIAN_FRONTEND=noninteractive apt-get install -y wget unzip && \
  rm -rf /var/lib/apt/lists/* && \
-# download wowza plugin 
-wget "${WOWZA_LOADBALANCER_PLUGIN_URL}" -O /tmp/LoadBalancer.zip && \
+ # download wowza plugin 
+ wget "${WOWZA_LOADBALANCER_PLUGIN_URL}" -O /tmp/LoadBalancer.zip && \
  # install LoadBalancer Plugin
  unzip /tmp/LoadBalancer.zip -d "/tmp/LoadBalancer/" && \
  mv /tmp/LoadBalancer/lib/*.jar "${WOWZA_BASE_PATH}/lib/" && \
