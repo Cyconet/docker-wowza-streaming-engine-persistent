@@ -8,3 +8,6 @@ run:
 	
 shell:
 	docker container run --rm -it --entrypoint sh $(IMAGE_NAME) -l
+
+test: build
+	docker container ps | grep -q $(IMAGE_NAME)
