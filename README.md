@@ -7,6 +7,11 @@ Running
 
 Please have a look into the offical [documentaion](https://www.wowza.com/forums/content.php?867-How-to-set-up-Wowza-Streaming-Engine-using-Docker) by Wowza media systems.
 
+Persistence of configuration
+----------------------------
+
+For Wowza to preserve its configuration state across container shutdown and startup you should mount a volume at ```/var/lib/wowza```.
+
 Building
 --------
 
