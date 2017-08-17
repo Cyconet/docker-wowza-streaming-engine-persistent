@@ -25,6 +25,26 @@ rewire_wowza() {
   ln -sf ${WSE_DATA_DIR}/stats /usr/local/WowzaStreamingEngine/stats
 }
 
+initialize_log_dir() {
+  rm -rf /var/log/supervisor
+  mkdir -p ${WSE_LOG_DIR}/supervisor
+  chmod 0755 ${WSE_LOG_DIR}/supervisor
+  chown -R root:root ${WSE_LOG_DIR}/supervisor
+  ln -sf ${WSE_LOG_DIR}/supervisor /var/log/supervisor
+
+  rm -rf /usr/local/WowzaStreamingEngine/logs
+  mkdir -p ${WSE_LOG_DIR}/wowza
+  chmod 0755 ${WSE_LOG_DIR}/wowza
+  chown -R root:root ${WSE_LOG_DIR}/wowza
+  ln -sf ${WSE_LOG_DIR}/wowza /usr/local/WowzaStreamingEngine/logs
+
+  rm -rf /usr/local/WowzaStreamingEngine/manager/logs
+  mkdir -p ${WSE_LOG_DIR}/manager
+  chmod 0755 ${WSE_LOG_DIR}/manager
+  chown -R root:root ${WSE_LOG_DIR}/manager
+  ln -sf ${WSE_LOG_DIR}/manager /usr/local/WowzaStreamingEngine/manager/logs
+}
+
 initialize_data_dir() {
   mkdir -p ${WSE_DATA_DIR}
   chmod 0755 ${WSE_DATA_DIR}
@@ -45,4 +65,5 @@ initialize_data_dir() {
 }
 
 initialize_data_dir
+initialize_log_dir
 rewire_wowza
