@@ -1,5 +1,7 @@
 # Docker-Wowza
 
+[![](https://images.microbadger.com/badges/version/waja/wowza-streaming-engine-linux-loadbalancer.svg)](https://hub.docker.com/r/waja/wowza-streaming-engine-linux-loadbalancer/)
+[![](https://images.microbadger.com/badges/image/waja/wowza-streaming-engine-linux-loadbalancer.svg)](https://hub.docker.com/r/waja/wowza-streaming-engine-linux-loadbalancer/)
 [![Build Status](https://travis-ci.org/Cyconet/docker-wowza-streaming-engine-linux-loadbalancer.svg?branch=development)](https://travis-ci.org/Cyconet/docker-wowza-streaming-engine-linux-loadbalancer)
 [![Docker Build Status](https://img.shields.io/docker/build/waja/wowza-streaming-engine-linux-loadbalancer.svg)](https://hub.docker.com/r/waja/wowza-streaming-engine-linux-loadbalancer/)
 [![GitHub tag](https://img.shields.io/github/tag/Cyconet/docker-wowza-streaming-engine-linux-loadbalancer.svg)](https://github.com/Cyconet/docker-wowza-streaming-engine-linux-loadbalancer/tags)
