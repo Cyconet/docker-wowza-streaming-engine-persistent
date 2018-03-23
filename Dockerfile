@@ -10,8 +10,8 @@ ARG "VCS_REF=unknown"
 ARG "VCS_BRANCH=unknown"
 
 # See http://label-schema.org/rc1/ and https://microbadger.com/labels
-LABEL org.label-schema.name="Wowza - Wowza Live Streaming Server (with persistence)" \
-    org.label-schema.description="Wowza Live Streaming Server with installed loadbalancer extension" \
+LABEL org.label-schema.name="Wowza - Wowza Live Streaming Server" \
+    org.label-schema.description="Wowza Live Streaming Server (with persistence)" \
     org.label-schema.vendor="Cyconet" \
     org.label-schema.schema-version="1.0" \
     org.label-schema.build-date=$BUILD_DATE \
