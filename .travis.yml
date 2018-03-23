@@ -10,7 +10,7 @@ services:
 
 install:
   - make build
-  - docker run -d --name wowza --expose 1935/tcp --expose 8086/tcp --expose 8087/tcp --expose 8088/tcp --publish 1935:1935 --publish 8086:8086 --publish 8087:8087 --publish 8088:8088 --volume /srv/docker/wowza/log:/var/log/wowza --entrypoint /sbin/entrypoint.sh waja/wowza-streaming-engine-linux-loadbalancer
+  - docker run -d --name wowza --expose 1935/tcp --expose 8086/tcp --expose 8087/tcp --expose 8088/tcp --publish 1935:1935 --publish 8086:8086 --publish 8087:8087 --publish 8088:8088 --volume /srv/docker/wowza/log:/var/log/wowza --entrypoint /sbin/entrypoint.sh waja/wowza-streaming-engine-persistent
 
 script:
   - make test

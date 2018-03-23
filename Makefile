@@ -1,4 +1,4 @@
-IMAGE_NAME := waja/wowza-streaming-engine-linux-persistent
+IMAGE_NAME := waja/wowza-streaming-engine-persistent
 
 build:
 	docker build --rm -t $(IMAGE_NAME) .
