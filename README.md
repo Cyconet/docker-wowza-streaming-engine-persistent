@@ -21,7 +21,7 @@ Please have a look into the offical [documentaion](https://www.wowza.com/forums/
 Persistence of configuration
 ----------------------------
 
-For Wowza to preserve its configuration state across container shutdown and startup you should mount a volume at ```/var/lib/wowza```.
+For Wowza to preserve its configuration state across container shutdown and startup you should mount a volume at ```/var/lib/wowza```, logs are written to ```/var/log/wowza```.
 
 Building
 --------
